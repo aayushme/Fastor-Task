@@ -1,0 +1,574 @@
+/********faculty cards****/
+.card {
+  margin-top:-2rem;
+  margin: 2rem;
+  background-color: #fff;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 2rem;
+  font-size: 15px;
+  box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.heightis {
+  height: 440px !important;
+}
+
+.column{
+  float: left;
+  width: 30%;
+  margin-left: 3.1rem;
+}
+
+.selected-button button{
+  margin-left: 2rem;
+  width:20rem;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgb(243, 237, 230);
+  color: #000000;
+  text-decoration: none;
+}
+
+.selected-button Link{
+  text-decoration: none;
+}
+
+.card .banner {
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 11rem;
+  margin-top:-3rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.card .bannercr {
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 11rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.link_remove{
+  text-decoration: none;
+}
+.card .bannercr img {
+  background-color: #fff;
+  width: 10.5rem;
+  height: 10.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: translateY(50%);
+  transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.card .bannercr img:hover {
+  transform: translateY(50%) scale(1.3);
+}
+.card .banner img {
+  background-color: #fff;
+  width: 12rem;
+  height: 12rem;
+  padding-top:-1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: translateY(50%);
+  transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.card .banner img:hover {
+  transform: translateY(50%) scale(1.3);
+}
+.card .menu {
+  width: 100%;
+  height: 5.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.card h2.name {
+  text-align: center;
+  color: #224056;
+  font-weight: bold;
+  padding: 0 2rem 0.5rem;
+  margin-top: 1.5rem;
+}
+.card .title {
+  color: #a0a0a0;
+  font-size: 1rem;
+  text-align: center;
+  margin-top:-1.5rem;
+  padding: 0 2rem 1.2rem;
+  text-decoration: none;
+}
+.card .actions {
+  padding: 0 2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  order: 99;
+  text-decoration: none;
+}
+
+.card .bannerdeveloper {
+  background-image: url("");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 11rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.card .bannerdeveloper img {
+  background-color: #fff;
+  width: 8rem;
+  height: 8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: translateY(50%);
+  transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.card .bannerdeveloper img:hover {
+  transform: translateY(50%) scale(1.3);
+}
+
+.events__content {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: wrap;
+}
+.github {
+  color: black;
+}
+.events__card {
+  max-width: 30rem;
+  background: whitesmoke;
+  border-radius: 5px;
+  transition: all 0.2s;
+  margin: 2rem;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+.event-image img {
+  width: 100%;
+  height: 70% !important;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.events__card:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.event-info {
+  padding: 1rem;
+}
+.event-info h2 {
+  text-align: left;
+
+  margin-top: 0.2rem;
+  font-weight: 600;
+  color: #224056;
+}
+.description_event p {
+  text-align: justify;
+}
+.dateandtime,
+.entryfee {
+  text-align: left;
+}
+.dateandtime span {
+  margin-right: 1rem;
+}
+
+.our__members-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin-bottom: 3rem;
+}
+.sociallinks i {
+  margin: 0.2rem;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  border-radius: 200px;
+}
+.insta {
+  color: pink;
+}
+.branch {
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+.about__us-head h1{
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fff;
+}
+.about__us-head {
+  text-align: center;
+  left:20%;
+  right: 20%;
+}
+
+.about__us-head p{
+  color: white;
+  text-align: center;
+  margin-left:5rem;
+  margin-right:5rem;
+}
+
+/* Search Bar */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #003941;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #003941;
+}
+
+.searchButton {
+  width: 100px;
+  height: 36px;
+  border: 1px solid #003941;
+  background: #003941;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.searchButton-new{
+  width: 150px;
+  margin-left: 0.3rem;
+  margin-bottom: 1.8rem;
+  height: 40px;
+  border: 1px solid #003941;
+  background: #003941;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.selected{
+  color: greenyellow;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.rejected{
+  color: red;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*login page*/
+.generator {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.pwgen-form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  border-radius: 10px;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form input:hover {
+  background: #f7f7f7;
+}
+
+.form button {
+  outline: 0;
+  background: #4b517f;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:active {
+  background: #1f223a;
+}
+
+.form button:hover {
+  background: #717a9e;
+}
+
+@-webkit-keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+ @keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*------------Login Page-------------*/
+
+.section {
+  position: relative;
+  min-height: 100vh;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.section .container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.section .container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.section .container .user .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: gainsboro;
+  transition: 0.5s;
+}
+
+.section .container .user .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+.section .container .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+}
+
+.section .container .user .formBx form h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.section .container .user .formBx form input {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin: 8px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.section .container .user .formBx form input[type="submit"] {
+  max-width: 100px;
+  background: #677eff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.section .container .user .formBx form .signup {
+  position: relative;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.section .container .user .formBx form .signup a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #677eff;
+}
+
+.section .container .signupBx {
+  pointer-events: none;
+}
+
+.section .container.active .signupBx {
+  pointer-events: initial;
+}
+
+.section .container .signupBx .formBx {
+  left: 100%;
+}
+
+.section .container.active .signupBx .formBx {
+  left: 0;
+}
+
+.section .container .signupBx .imgBx {
+  left: -100%;
+}
+
+.section .container.active .signupBx .imgBx {
+  left: 0%;
+}
+
+.section .container .signinBx .formBx {
+  left: 0%;
+}
+
+.section .container.active .signinBx .formBx {
+  left: 100%;
+}
+
+.section .container .signinBx .imgBx {
+  left: 0%;
+}
+
+.section .container.active .signinBx .imgBx {
+  left: -100%;
+}
+
+@media (max-width: 991px) {
+  .section .container {
+    max-width: 400px;
+  }
+
+  .section .container .imgBx {
+    display: none;
+  }
+
+  .section .container .user .formBx {
+    width: 100%;
+  }
+}
+
+/*===============userpage=====================*/
+.parent-img{
+  position: relative;
+}
+.parent-img-responsive{
+width:100%;
+height:auto;	
+}
+.child-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.overlay{
+  margin: auto;
+  width: 50%;
+}

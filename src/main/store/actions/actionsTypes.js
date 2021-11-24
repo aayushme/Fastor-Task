@@ -1,0 +1,13 @@
+
+export const MEMBER_GET_SUCCESS = 'MEMBER_GET_SUCCESS';
+export const MEMBER_GET_FAIL = 'MEMBER_GET_FAIL';
+
+export const AUTH_START = 'AUTH_START'
+export const AUTH_SUCCESS = 'AUTH_SUCCESS'
+export const AUTH_FAIL = 'AUTH_FAIL'
+
+export const SIGNUP_SUCCESS = 'SIGNUP_SUCCESS'
+export const SIGNUP_FAIL = 'SIGNUP_FAIL'
+
+
+

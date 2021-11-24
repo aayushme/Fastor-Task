@@ -1,0 +1,70 @@
+
+/*----------  Variables  ----------*/
+:root {
+  --bg-primary: #dbf3f1;
+  --bg-secondary: #bce1f3;
+  --primary: #224056;
+  --secondary: #49c2b9;
+}
+
+/*----------  fonts  ----------*/
+
+/*----------  Global Styles  ----------*/
+
+@font-face {
+  font-family: myFont;
+  src: url(./Roboto-Light.ttf);
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand", sans-serif;
+}
+
+@-webkit-keyframes fontfix {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+body {
+  background: url(./main/images/background.jpg);
+  background-size: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
