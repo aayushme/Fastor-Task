@@ -14,7 +14,7 @@ class AppRouter extends React.Component {
   render() {
     return (
       <Router>
-        {this.props.token !== null  ? (
+        {this.props.token !== null ? (
           <>
             <Switch>
               <div className="AppRouter">
@@ -50,7 +50,7 @@ const mapDispatchToProps = (dispatch) => {
     },
     authCheckStatus: () => {
       dispatch(actions.authCheckStatus());
-    }
+    },
   };
 };
 

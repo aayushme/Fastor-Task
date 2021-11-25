@@ -77,10 +77,18 @@ export const authCheckStatus = () => {
 
 /*============Redux Signup===========*/
 
+export const signupStart = () => {
+  return {
+    type: actionTypes.SIGNUP_START,
+    loading: true,
+  };
+};
+
 export const signupSuccess = (data) => {
   return {
     type: actionTypes.SIGNUP_SUCCESS,
-    status:"OTP Sent, Please Login Now"
+    status:"OTP Sent, Please Login Now",
+    loading:false
   };
 };
 
@@ -94,6 +102,7 @@ export const signupfail = (err) => {
 
 export const reduxSignup = (phone) => {
   return (dispatch) => {
+    dispatch(signupStart());
     var querystring = require("querystring");
     var postData = querystring.stringify({
       dial_code: "+91",

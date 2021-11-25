@@ -5,6 +5,7 @@ import fastor from "../../images/Fastor Logo.png";
 import "./util.css";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
+import Backdrop from "../utils/modals/backdrop";
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -102,6 +103,8 @@ class LoginPage extends React.Component{
     return(
       <>
       {error}
+      <Backdrop open={this.props.authloading} />
+      <Backdrop open={this.props.signuploading} />
       <div className="section">
           <div class={this.state.activeClass}>
             <div class="user signinBx">
@@ -201,7 +204,9 @@ class LoginPage extends React.Component{
 
 const mapStateToProps = (props) => {
   return {
-    status:props.auth.status
+    status:props.auth.status,
+    authloading:props.auth.authloading,
+    signuploading:props.auth.signuploading
   };
 };
 

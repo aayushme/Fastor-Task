@@ -4,7 +4,7 @@ import Card from "./cards.js";
 import { connect } from "react-redux";
 import * as actions from "../../store/actions/index";
 import { Link } from "react-router-dom";
-
+import Backdrop from "../utils/modals/backdrop";
 
 const MainLayout = (props) => {
   const [search, setSearch] = React.useState("");
@@ -28,17 +28,12 @@ const MainLayout = (props) => {
     setSearch("");
   };
 
-  const dispatchRerout = (e, status) => {
-    e.preventDefault();
-    localStorage.setItem("status", status);
-  };
-
   return (
     <div className="aboutpage">
       <div className="about__us-head">
-        <h1>Hotels</h1>
+        <h1>Fastor Hotels</h1>
       </div>
-      
+
       <div class="wrap">
         <div class="search">
           <input
@@ -59,7 +54,11 @@ const MainLayout = (props) => {
       <br />
       <br />
       <div className="developer__content">
-        <Card val={newdata === null ? props.member : newdata} />
+        {props.member === null ? (
+          <Backdrop open={true} />
+        ) : (
+          <Card val={newdata === null ? props.member : newdata} />
+        )}
       </div>
     </div>
   );
@@ -75,7 +74,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     getMember: (token) => {
       dispatch(actions.getMember(token));
-    }
+    },
   };
 };
 

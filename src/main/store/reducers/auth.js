@@ -4,18 +4,19 @@ import { updateObject } from "../utility";
 const initialState = {
   token: null,
   status: null,
-  loading: false,
+  authloading: false,
+  signuploading:false
 };
 
 const authStart = (state, action) => {
-  return updateObject(state, { error: null, loading: true });
+  return updateObject(state, { error: null, authloading: true });
 };
 
 const authSuccess = (state, action) => {
   return updateObject(state, {
     token: action.token,
     status: action.status,
-    loading: false,
+    authloading: false,
   });
 };
 
@@ -23,14 +24,18 @@ const authFail = (state, action) => {
   return updateObject(state, {
     status: action.status,
     token: null,
-    loading: false,
+    authloading: false,
   });
+};
+
+const signupStart = (state, action) => {
+  return updateObject(state, { error: null, signuploading: true });
 };
 
 const signupSuccess = (state, action) => {
   return updateObject(state, {
     status: action.status,
-    loading: false,
+    signuploading: false,
   });
 };
 
@@ -38,7 +43,7 @@ const signupFail = (state, action) => {
   return updateObject(state, {
     status: action.status,
     token: null,
-    loading: false,
+    signuploading: false,
   });
 };
 
@@ -50,10 +55,12 @@ const reducer = (state = initialState, action) => {
       return authSuccess(state, action);
     case actionTypes.AUTH_FAIL:
       return authFail(state, action);
-      case actionTypes.SIGNUP_SUCCESS:
+    case actionTypes.SIGNUP_SUCCESS:
       return signupSuccess(state, action);
     case actionTypes.SIGNUP_FAIL:
       return signupFail(state, action);
+    case actionTypes.SIGNUP_START:
+      return signupStart(state, action);
     default:
       return state;
   }
